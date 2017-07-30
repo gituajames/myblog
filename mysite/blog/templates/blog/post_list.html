@@ -2,7 +2,7 @@
 {% block content %}
 {% for post in posts %}
 <div>
-    <h1><a href="{% url 'post_detail' pk=post.pk%}"><a/>{{ post.title }}</h1>
+    <h1><a href="{% url 'post_detail' pk=post.pk%}">{{ post.title }}</a></h1>
     <!--p>{{post.text}}</p-->
     <p> post was created by {{post.author}} at {{post.created_date}}</p>
 </div>
